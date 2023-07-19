@@ -15,7 +15,7 @@
         <a href="#">
           <img src="@/assets/eloboost.png" alt="Circle Image 1">
         </a>
-        <p style="font-size:20px; font-weight:bold">Elo <br> Boost</p>
+        <p class = "circle-texts">Elo Boost</p>
       </div>
 
       <!-- Circle 2 -->
@@ -23,35 +23,35 @@
         <a href="#">
           <img src="@/assets/duo.png" alt="Circle Image 2">
         </a>
-        <p style="font-size:20px; font-weight:bold">Duo <br> Boost</p>
+        <p class = "circle-texts">Duo Boost</p>
       </div>
 
       <div class="circle">
         <a href="#">
           <img src="@/assets/win.png" alt="Circle Image 3">
         </a>
-        <p style="font-size:20px; font-weight:bold">Win <br> Boost</p>
+        <p class = "circle-texts">Win Boost</p>
       </div>
 
       <div class="circle">
         <a href="#">
           <img src="@/assets/radiant.png" alt="Circle Image 4">
         </a>
-        <p style="font-size:20px; font-weight:bold">Radiant <br> Boost</p>
+        <p class = "circle-texts">Radiant Boost</p>
       </div>
 
       <div class="circle">
         <a href="#">
           <img src="@/assets/unranked.png" alt="Circle Image 5">
         </a>
-        <p style="font-size:20px; font-weight:bold">Normal <br> Maç</p>
+        <p class = "circle-texts">Normal Maç</p>
       </div>
 
       <div class="circle">
         <a href="#">
           <img src="@/assets/ilk-10.png" alt="Circle Image 6">
         </a>
-        <p style="font-size:20px; font-weight:bold">Yerleştirme <br> Maçları</p>
+        <p class = "circle-texts">Yerleştirme <br> Maçları</p>
       </div>
 
     </div>
@@ -110,6 +110,15 @@ body {
     transition: transform 0.2s ease;
   }
 
+  .circle-texts {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .circle:not(:first-child) {
+    margin-: 0px; /* Adjust this value to increase or decrease the horizontal spacing */
+  }
+
   .circle img {
     height: 150px; /* Set the height of the circle image */
     width: 150px; /* Set the width of the circle image */
@@ -122,6 +131,6 @@ body {
   }
 
   .circle p {
-    margin-top: 10px; /* Add some space between the circle image and the word */
+    margin-top: 5px; /* Add some space between the circle image and the word */
   }
 </style>
